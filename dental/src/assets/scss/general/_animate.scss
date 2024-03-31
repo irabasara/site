@@ -257,7 +257,13 @@
   animation-name: pulse;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  // --animate-delay:2s,
+  // --animate-duration: 3s;
 }
+// .animate__animated.animate__pulse {
+//   --animate-delay:2s,
+//   --animate-duration: 3s;
+// }
 @-webkit-keyframes rubberBand {
   from {
     -webkit-transform: scale3d(1, 1, 1);

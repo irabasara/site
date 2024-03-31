@@ -1,0 +1,39 @@
+.hero{
+    padding-top: 120px;
+    background-color: $grey;
+    &__wrapper{
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 470px;
+    }
+    &__buttons{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    img{
+        min-width: 300px;
+        
+    }
+}
+
+@media (max-width:$md3){
+    .hero{
+        &__wrapper{
+            flex-direction: column-reverse;
+        }
+        &__content{
+            gap: 30px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

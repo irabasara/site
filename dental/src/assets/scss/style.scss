@@ -1,53 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-@import "general/null";
-@import "general/fonts";
-@import "general/mixins";
 @import "general/variables";
-@import "general/components";
-@import "general/header";
-@import "general/footer";
+@import "general/null";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/buttons";
+@import "general/title";
 @import "general/animate";
-@import "general/indents";
-// @import 'animate.scss';
+@import "block/header";
+@import "block/footer";
+@import "block/hero";
+@import "block/features";
 
-@import "hero";
 
 a {
   transition: all .2s ease;
 }
 
-.title {
-  &.primary {
-  }
-  &.secondary {
-  }
-}
-
-
 body {
-  font-family: 
-  sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 110%;
   position: relative;
-  font-size: 20px;
+  font-size: 14px;
   color: $black;
   line-height: 130%;
+  letter-spacing: 1%;
   font-weight: 300;
   &.lock {
     overflow: hidden;
   }
 }
 
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.page {
-  flex: 1 1 auto;
-}
 
 section {
   padding: 80px 0;
@@ -57,7 +41,7 @@ section {
 }
 
 [class*="__container"] {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -76,4 +60,6 @@ section {
     max-width: none;
   }
 }
+
+
 

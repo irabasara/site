@@ -1,0 +1,20 @@
+.title {
+    font-weight: 700;
+    line-height: 110%;
+
+    &_fz40{
+        color:$primary;
+        @include adaptiv-font(24, 16);
+        text-transform: uppercase;
+        line-height: 120%;
+    }
+    &_fz24{
+        @include adaptiv-font(24, 16);
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    &_fz16{
+        @include adaptiv-font(16, 14);
+
+    }
+}

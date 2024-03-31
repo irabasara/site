@@ -1,0 +1,52 @@
+.btn {
+  border: 2px solid $primary;
+  max-width: fit-content;
+  display: block;
+  padding: 12px 30px;
+  transition: all .5s ease;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  &.full {
+    width: 100%;
+    max-width: 100%;
+  }
+  &.sm {
+    padding: 8px 20px !important;
+  }
+
+
+  &.primary {
+    background: $primary;
+    color: $white;
+
+    @media (min-width: $md2) {
+      &:hover {
+        background: $hover;
+      }
+    }
+    &:disabled {
+      color: $primary;
+      cursor: not-allowed;
+    }
+
+  }
+  &.secondary {
+    border: 2px solid $primary;
+    background: transparent;
+    color: $primary;
+    @media (min-width: $md2) {
+      &:hover {
+        border: 2px solid $hover;
+        background: $hover;
+        color: $white;
+      }
+      &:disabled {
+        opacity: .6;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+}
+
