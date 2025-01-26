@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+	  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <meta property="og:title" content=""/>
+  <meta property="og:description" content=""/>
+  <meta property="og:image" content="assets/images/main-bg.webp"/>
+  <meta property="og:image:width" content="630"/>
+  <meta property="og:image:height" content="390"/>
+  
+  <link rel="icon" type="image/svg" href="assets/images/logo.svg">
+  
+  <!-- libs-->
+  <!--   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!--   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <!--   <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <link
+	  rel="stylesheet"
+	  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  
+  <!--   <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+  <link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/css/intlTelInput.css"
+	  integrity="sha512-Ky9SFgkYYIAWfFbsz+Tvrs+kpW7mgyQu+glUEnVV60+nxDPe64w0CrYRSMKsmTwJtN2jXNmU5SBgcyzKOwsn3w=="
+	  crossorigin="anonymous"
+	  referrerpolicy="no-referrer"/>
+  <script defer
+	  src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.6/js/intlTelInput.min.js"
+	  integrity="sha512-TJcZiZrZVz21UAAVhWdDyVWIBVa7mGSWk3jrmrq/laOjpoi+bSsCSN51WG5YKwGp4ZmOhlg5PZZKzR9hReehiw=="
+	  crossorigin="anonymous"
+	  referrerpolicy="no-referrer"></script>
+  <!-- styles -->
+  <link href="css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- scripts -->
+  <!--   <script defer src="assets/js/main.min.js"></script> -->
+  <!--   <script defer src="assets/js/general.min.js"></script> -->
+</head>
+<body>
+  <header class="header" data-scroll="120" data-scroll-show="500">
+	<div class="header__container"><img
+		src="images/svg/logo.svg"
+		alt="logo"
+		class="header__logo"
+		width="250"
+		height="22"
+	>
+	  <nav class="header__menu menu" id="menu">
+		<ul class="menu__list">
+		  <li class="menu__item">
+			<a href="/" class="menu__link">Про полк</a>
+		  </li>
+		  <li class="menu__item">
+			<a href="/" class="menu__link active">Вакансії</a>
+		  </li>
+		  <li class="menu__item">
+			<a href="/" class="menu__link">Наші воїни</a>
+		  </li>
+		  <li class="menu__item">
+			<a href="/" class="menu__link">Грошове забезпечення</a>
+		  </li>
+		</ul>
+	  
+	  </nav>
+	  <div class="header__buttons">
+		<button
+			type="button"
+			aria-label="Вступити"
+			title="Вступити"
+			class="button button--outline"
+			id="menu-button"
+			data-modal-target="modal-contact"
+		>Вступити
+		</button>
+		<button
+			type="button"
+			class="burger js-open-btn"
+			aria-label="Відкрити меню"
+			title="Відкрити меню"
+		>
+		  <!-- 		  <span></span> -->
+		  <span></span>
+		  <span></span>
+		</button>
+	  </div>
+	</div>
+  </header>
+  
+  <main class="page">
+	<section class="hero">
+	  <div class="hero__container">
+		<div class="hero__head">
+		  <h1>ДОЛУЧАЙСЯ</h1>
+		  <p>ДО КРАЩИХ</p>
+		</div>
+		<div class="hero__bg">
+		  <img src="images/main/union.webp" alt="union" class="hero__union">
+		  <img src="images/main/hero.webp" alt="ДОЛУЧАЙСЯ ДО КРАЩИХ" class="hero__img">
+		</div>
+	  </div>
+	</section>
+	<section class="vacancies">
+	  <div class="vacancies__container">
+		<h2 class="visually-hidden">Вакансії</h2>
+		<ul class="vacancies__list">
+		  <li class="vacancies__card vacancies-card"
+			  data-aos="zoom-in"
+			  data-aos-delay="100"
+			  style="background-color: #161616">
+			<div class="vacancies-card__head">
+			  <h3>Бредлісти</h3>
+			  <p>Надійна броня</p>
+			</div>
+			<div class="vacancies-card__buttons">
+			  <button
+				  type="button"
+				  aria-label="Вступити"
+				  title="Вступити"
+				  class="button"
+			  >Вступити
+			  </button>
+			  <button
+				  type="button"
+				  aria-label="Детальніше про вакансію"
+				  title="Детальніше про вакансію"
+				  class="button button--outline"
+			  >Деталі
+			  </button>
+			</div>
+			<img src="images/vacancies/3.webp" alt="vacancies" width="466" height="298">
+			<p class="slogan">Приєднуйся до кращих</p>
+		  </li>
+		  <li class="vacancies__card vacancies-card"
+			  data-aos="zoom-in"
+			  data-aos-delay="200"
+			  style="background-color: #161616">
+			<div class="vacancies-card__head">
+			  <h3>Бредлісти</h3>
+			  <p>Надійна броня</p>
+			</div>
+			<div class="vacancies-card__buttons">
+			  <button
+				  type="button"
+				  aria-label="Вступити"
+				  title="Вступити"
+				  class="button"
+			  >Вступити
+			  </button>
+			  <button
+				  type="button"
+				  aria-label="Детальніше про вакансію"
+				  title="Детальніше про вакансію"
+				  class="button button--outline"
+			  >Деталі
+			  </button>
+			</div>
+			<img src="images/vacancies/3.webp" alt="vacancies" width="466" height="298">
+			<p class="slogan">Приєднуйся до кращих</p>
+		  </li>
+		  <li class="vacancies__card vacancies-card"
+			  data-aos="zoom-in"
+			  data-aos-delay="400"
+			  style="background-color: #161616">
+			<div class="vacancies-card__head">
+			  <h3>Бредлісти</h3>
+			  <p>Надійна броня</p>
+			</div>
+			<div class="vacancies-card__buttons">
+			  <button
+				  type="button"
+				  aria-label="Вступити"
+				  title="Вступити"
+				  class="button"
+			  >Вступити
+			  </button>
+			  <button
+				  type="button"
+				  aria-label="Детальніше про вакансію"
+				  title="Детальніше про вакансію"
+				  class="button button--outline"
+			  >Деталі
+			  </button>
+			</div>
+			<img src="images/vacancies/3.webp" alt="vacancies" width="466" height="298">
+			<p class="slogan">Приєднуйся до кращих</p>
+		  </li>
+		  <li class="vacancies__card vacancies-card"
+			  data-aos="zoom-in"
+			  data-aos-delay="600"
+			  style="background-color: #161616">
+			<div class="vacancies-card__head">
+			  <h3>Бредлісти</h3>
+			  <p>Надійна броня</p>
+			</div>
+			<div class="vacancies-card__buttons">
+			  <button
+				  type="button"
+				  aria-label="Вступити"
+				  title="Вступити"
+				  class="button"
+			  >Вступити
+			  </button>
+			  <button
+				  type="button"
+				  aria-label="Детальніше про вакансію"
+				  title="Детальніше про вакансію"
+				  class="button button--outline"
+			  >Деталі
+			  </button>
+			</div>
+			<img src="images/vacancies/3.webp" alt="vacancies" width="466" height="298">
+			<p class="slogan">Приєднуйся до кращих</p>
+		  </li>
+		</ul>
+	  </div>
+	</section>
+	<section class="banner" style="background: #000">
+	  <div class="banner__container">
+		<div class="banner__body">
+		  <div class="banner__head">
+			<h2>Бредлісти</h2>
+			<p>Надійна броня</p>
+		  </div>
+		  <div class="banner__buttons">
+			<button
+				type="button"
+				aria-label="Вступити"
+				title="Вступити"
+				class="button"
+			>Вступити
+			</button>
+			<button
+				type="button"
+				aria-label="Детальніше про вакансію"
+				title="Детальніше про вакансію"
+				class="button button--outline"
+			>Деталі
+			</button>
+		  </div>
+		  <img src="images/vacancies/5.png" alt="vacancies">
+		  <p class="slogan">Приєднуйся до кращих</p>
+		</div>
+	  </div>
+	</section>
+	<section class="banner" style="background: linear-gradient(180deg, #A3A7C5 0%, #FFF 100%);">
+	  <div class="banner__container">
+		<div class="banner__body">
+		  <div class="banner__head">
+			<h2>До 240 000 грн</h2>
+			<p>Гідне грошове забезпечення</p>
+		  </div>
+		  <div class="banner__buttons">
+			<button
+				type="button"
+				aria-label="Вступити"
+				title="Вступити"
+				class="button"
+			>Вступити
+			</button>
+			<button
+				type="button"
+				aria-label="Детальніше про вакансію"
+				title="Детальніше про вакансію"
+				class="button button--outline"
+			>Деталі
+			</button>
+		  </div>
+		  <img src="images/vacancies/card.png" alt="vacancies">
+		  <p class="slogan">Приєднуйся до кращих</p>
+		</div>
+	  </div>
+	</section>
+	<section class="gallery">
+	  <div class="swiper gallery__slider">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+		  <!-- Slides -->
+		  <div class="swiper-slide gallery__slide">
+			<img src="images/slider/1.webp" alt="slider">
+		  </div>
+		  <div class="swiper-slide gallery__slide">
+			<img src="images/slider/2.webp" alt="slider">
+		  </div>
+		  <div class="swiper-slide gallery__slide">
+			<img src="images/slider/3.webp" alt="slider">
+		  </div>
+		  <div class="swiper-slide gallery__slide">
+			<img src="images/slider/1.webp" alt="slider">
+		  </div>
+		  <div class="swiper-slide gallery__slide">
+			<img src="images/slider/2.webp" alt="slider">
+		  </div>
+		  <div class="swiper-slide gallery__slide">
+			<img src="images/slider/3.webp" alt="slider">
+		  </div>
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination gallery__pagination"></div>
+		
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev gallery__prev"></div>
+		<div class="swiper-button-next gallery__next"></div>
+	  </div>
+	</section>
+	<section class="video-gallery">
+	  <div class="swiper video-gallery__slider">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+		  <!-- Slides -->
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		  <div class="swiper-slide video-gallery__slide">
+			<!-- 			<div class="video-gallery__video"> -->
+			<iframe src="https://www.youtube.com/embed/PtB5lzyyu0Q?si=DDM36Vl7BNWupMei"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			<!-- 			</div> -->
+			<h3>Полк «Скала» починав як добровольчі мобільно-вогневі групи</h3>
+			<img src="images/svg/youtube.svg" alt="Youtube logo" height="44">
+		  </div>
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination video-gallery__pagination"></div>
+		
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev video-gallery__prev"></div>
+		<div class="swiper-button-next video-gallery__next"></div>
+	  </div>
+	</section>
+	<section class="info">
+	  <div class="info__body">
+		<b>Полк «Скала» починав як добровольчі мобільно-вогневі групи, що знищували техніку й живу силу ворога з перших днів вторгнення. Восени 2023 року підрозділ став 425-м окремим штурмовим батальйоном у складі ОК «Схід» і відзначився у боях за Ізюм, Харківщину, Соледар, Бахмут, Авдіївку та Запорізький напрямок.
+		</b>
+		<br>
+		<p> У 2024 році бійці провели успішні операції біля Вугледара та Нью-Йорка, захопивши укріплені позиції й узявши полонених. Полк також заснував школу дронів «Скала» та має сучасне озброєння, включно з трофейним.</p>
+		<br>
+		<p>
+		  Полк “Скала” – це унікальна можливість випробувати свої сили та зануритися у реалії військової підготовки разом із професіоналами. Інструкторами виступають бійці 425 окремої штурмової бригади – герої, які брали участь у найгарячіших боях на фронті. Вони знають ціну кожної секунди, кожного руху і кожного рішення.</p>
+		<br>
+		<p>Ці військові – не просто інструктори. Це воїни, які пройшли крізь найжорстокіші бої, зустрічали ворога віч-на-віч і здобували перемогу завдяки своїм скілам, витримці та згуртованості. Їхній досвід – це те, що не прочитаєш у книгах і не побачиш у фільмах. Під час навчання вони передадуть тобі частину своїх знань, навичок та бойового духу.</p>
+		<br>
+		<p>Полк “Скала” запрошує тебе довести, що ти готовий до викликів. Готовий навчатися, боротися та перемагати. Готовий стати частиною тих, хто робить неможливе можливим. </p>
+	  </div>
+	</section>
+  </main>
+  
+  <footer class="footer">
+	<ul class="footer__socials">
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	  <li>
+		<a href="#" target="_blank">
+		  <img src="images/svg/Facebook.svg" alt="#" width="60" height="60">
+		</a>
+	  </li>
+	</ul>
+	<p class="footer__copy">Всі права захищено © 2025 </p>
+	<button
+		type="button"
+		id="up-scroll"
+		class="footer__up"
+		aria-label="Піднятися вгору"
+		title="Піднятися вгору"
+	>
+	  <img src="images/svg/arrow-up.svg" alt="Піднятися вгору">
+	</button>
+  </footer>
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+	<div class="modal" id="modal-contact">
+	  <h2>Зв’яжіться з нами</h2>
+	  <div class="modal__contacts contacts">
+		<div class="contacts__text">
+		  Ми боремося за свободу та незалежність України, аби забезпечити світле майбутнє для ниших дітей.
+		</div>
+		<div class="contacts__body">
+		  <h3>Контакти</h3>
+		  <ul class="contacts__list">
+			<li>
+			  <h4>
+				Телефон:
+			  </h4>
+			  <a href="#">+38 (098) 000 04 25</a>
+			</li>
+			<li>
+			  <h4>
+				Email:
+			  </h4>
+			  <a href="#">skala425.ukraine@gmail.com</a>
+			</li>
+			<li>
+			  <h4>
+				Наші соцмережі:
+			  </h4>
+			  <ul class="contacts__social-list">
+				<li>
+				  <a href="#">
+					<img src="images/svg/insta.svg" alt="" width="30" height="30">
+				  </a><a href="#">
+					<img src="images/svg/insta.svg" alt="" width="30" height="30">
+				  </a><a href="#">
+					<img src="images/svg/insta.svg" alt="" width="30" height="30">
+				  </a><a href="#">
+					<img src="images/svg/insta.svg" alt="" width="30" height="30">
+				  </a><a href="#">
+				  <img src="images/svg/insta.svg" alt="" width="30" height="30">
+				</a>
+				</li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="modal__form contact-form">
+		<form action="#">
+		  <input type="text" placeholder="Скільки вам років">
+		  <input type="text" placeholder="Скільки вам років">
+		  <input type="text" placeholder="Скільки вам років">
+		  <input type="text" placeholder="Скільки вам років">
+		  <input type="text" placeholder="Скільки вам років">
+		  <p>Чи  являєтеся діючим військовослужбовцем?</p>
+		  <input type="radio" name="union_radio" value="ні">ні</input>
+		  <input type="radio" name="union_radio" value="так">так</input>
+		  <input type="submit" value="Відправити">
+		</form>
+	  </div>
+	  <button class="close-modal" 
+		  aria-label="Закрити">
+		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+		<rect width="32.0214" height="3.04966" rx="1.52483" transform="matrix(0.707113 -0.707101 0.707113 0.707101 0 22.6425)" fill="white"/>
+		<rect width="32.0214" height="3.04966" rx="1.52483" transform="matrix(0.707113 0.707101 -0.707113 0.707101 2.35742 0.201172)" fill="white"/>
+	  </svg>
+	  </button>
+	</div>
+  </div>
+<!--    -->
+<!--   &lt;!&ndash; Кнопки для відкриття модалок &ndash;&gt; -->
+<!--   <button data-modal-target="modal-1">Відкрити модалку 1</button> -->
+<!--    -->
+  
+  <!-- <div id="fls-preloader"> -->
+  <!--   &lt;!&ndash; Скріпт прелоадера &ndash;&gt; -->
+  <!--   <script> -->
+  <!--       function preloader() { -->
+  <!--           const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img'); -->
+  <!--           const preloaderContainer = document.querySelector('#fls-preloader'); -->
+  <!--           if (preloaderImages.length) { -->
+  <!--               const preloaderStyleTemplate = ` -->
+  <!-- 				<style> -->
+  <!-- 					* { -->
+  <!-- 						padding: 0px; -->
+  <!-- 						margin: 0px; -->
+  <!-- 						border: 0px; -->
+  <!-- 						box-sizing: border-box; -->
+  <!-- 					} -->
+  <!-- 					/* Головний блок */ -->
+  <!-- 					.fls-preloader{ -->
+  <!-- 					background-color: #161616; -->
+  <!-- 						pointer-events: none; -->
+  <!-- 						z-index: -1; -->
+  <!-- 						position: fixed; -->
+  <!-- 						width: 100%; -->
+  <!-- 						height: 100%; -->
+  <!-- 						top: 0; -->
+  <!-- 						left: 0; -->
+  <!-- 						display: flex; -->
+  <!-- 						justify-content:center; -->
+  <!-- 						align-items: center; -->
+  <!-- 					} -->
+  <!-- 					/* Блок з елементами */ -->
+  <!-- 					.fls-preloader__body{ -->
+  <!-- 						padding: 0.93rem; -->
+  <!-- 						width: 95%; -->
+  <!-- 						display: flex; -->
+  <!-- 						flex-direction: column; -->
+  <!-- 					} -->
+  <!-- 					/* Блок з лічильником */ -->
+  <!-- 					.fls-preloader__counter{ -->
+  <!-- 						font-size: 12rem; -->
+  <!-- 						color: #FFF; -->
+  <!-- 					} -->
+  <!-- 					/* Прогресбар */ -->
+  <!-- 					.fls-preloader__line{} -->
+  <!-- 					/* Лінія прогресбару */ -->
+  <!-- 					.fls-preloader__line span{ -->
+  <!-- 						display: inline-block; -->
+  <!-- 						transition: width 0.2s ease; -->
+  <!-- 						height: 0.8rem; -->
+  <!-- 						background-color: #FFF; -->
+  <!-- 					} -->
+  <!-- 					.lock body{ -->
+  <!-- 						overflow: hidden; -->
+  <!-- 						touch-action: none; -->
+  <!-- 						overscroll-behavior: none; -->
+  <!-- 					} -->
+  <!-- 					.loading body>*:not(.fls-preloader){ -->
+  <!-- 						opacity: 0; -->
+  <!-- 						visibility: hidden; -->
+  <!-- 					} -->
+  <!-- 					.loaded body>*:not(.fls-preloader){ -->
+  <!-- 						transition: opacity 0.5s ease 0s; -->
+  <!-- 						opacity: 1; -->
+  <!-- 						visibility: visible; -->
+  <!-- 					} -->
+  <!-- 				</style>`; -->
+  
+  <!--               document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate); -->
+  
+  <!--               const preloaderTemplate = ` -->
+  <!-- 					<div class="fls-preloader"> -->
+  <!-- 						<div class="fls-preloader__body"> -->
+  <!-- 							<div class="fls-preloader__counter">0%</div> -->
+  <!-- 							<div class="fls-preloader__line"><span></span></div> -->
+  <!-- 						</div> -->
+  <!-- 					</div>`; -->
+  <!--               document.body.insertAdjacentHTML("beforeend", preloaderTemplate); -->
+  
+  <!--               const -->
+  <!--                   preloader = document.querySelector('.fls-preloader'), -->
+  <!--                   showPecentLoad = document.querySelector('.fls-preloader__counter'), -->
+  <!--                   showLineLoad = document.querySelector('.fls-preloader__line span'), -->
+  <!--                   htmlDocument = document.documentElement; -->
+  
+  <!--               let imagesLoadedCount = counter = progress = 0; -->
+  
+  <!--               htmlDocument.classList.add('loading'); -->
+  <!--               htmlDocument.classList.add('lock'); -->
+  
+  <!--               preloaderImages.forEach(preloaderImage => { -->
+  <!--                   const imgClone = document.createElement('img'); -->
+  <!--                   if (imgClone) { -->
+  <!--                       imgClone.onload = imageLoaded; -->
+  <!--                       imgClone.onerror = imageLoaded; -->
+  <!--                       preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src; -->
+  <!--                   } -->
+  <!--               }); -->
+  
+  <!--               function setValueProgress(progress) { -->
+  <!--                   showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null; -->
+  <!--                   showLineLoad ? showLineLoad.style.width = `${progress}%` : null; -->
+  <!--               } -->
+  
+  <!--               showPecentLoad ? setValueProgress(progress) : null; -->
+  
+  <!--               function imageLoaded() { -->
+  <!--                   imagesLoadedCount++; -->
+  <!--                   progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount); -->
+  <!--                   const intervalId = setInterval(() => { -->
+  <!--                       counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter); -->
+  <!--                       counter >= 100 ? addLoadedClass() : null; -->
+  <!--                   }, 10); -->
+  <!--               } -->
+  
+  <!--               function addLoadedClass() { -->
+  <!--                   htmlDocument.classList.add('loaded'); -->
+  <!--                   htmlDocument.classList.remove('lock'); -->
+  <!--                   htmlDocument.classList.remove('loading'); -->
+  <!--                   setInterval(() => { -->
+  <!--                       preloader.remove(); -->
+  <!--                       preloaderContainer.remove(); -->
+  <!--                   }, 500); -->
+  <!--               } -->
+  <!--           } else { -->
+  <!--               preloaderContainer.remove(); -->
+  <!--           } -->
+  <!--       } -->
+  
+  <!--       preloader(); -->
+  <!--   </script> -->
+  <!-- </div> -->
+  <script src="js/aos.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
