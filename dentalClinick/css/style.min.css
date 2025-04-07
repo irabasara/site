@@ -2,3 +2,6 @@
 .menu__item{
   display: flex;
 }
+input,textarea{
+  color:var(--dark-color);
+}
